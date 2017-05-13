@@ -6,15 +6,15 @@ A collection of pure CSS React loading components. Based on Luke Haas [css-loade
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Components](#components)
-  - [BarLoader](#bar-loader)
-  - [BubbleLoader](#bubble-loader)
-  - [BubbleSpinLoader](#bubble-spin-loader)
-  - [CometSpinLoader](#comet-spin-loader)
-  - [CylinderSpinLoader](#cylinder-spin-loader)
-  - [ResizeSpinLoader](#resize-spin-loader)
-  - [RotateSpinLoader](#rotate-spin-loader)
-  - [SpinLoader](#spin-loader)
-- [How to Contribute](#how-to-contribute)
+  - [BarLoader](#barloader)
+  - [BubbleLoader](#bubbleloader)
+  - [BubbleSpinLoader](#bubblespinloader)
+  - [CometSpinLoader](#cometspinloader)
+  - [CylinderSpinLoader](#cylinderspinloader)
+  - [ResizeSpinLoader](#resizespinloader)
+  - [RotateSpinLoader](#rotatespinloader)
+  - [SpinLoader](#spinloader)
+- [How to Contribute](#howtocontribute)
 
 ## Getting Start
 
@@ -113,6 +113,7 @@ npm install react-css-loaders --save
 
 | Name | Type | Default |
 |---|---|---|
+| `background` | `PropTypes.string`  | `#000` |
 | `color` | `PropTypes.string`  | `#000` |
 | `duration` | `PropTypes.number`  | `2` |
 | `size` | `PropTypes.number`  | `11` |

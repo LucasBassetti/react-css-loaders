@@ -7,12 +7,14 @@ const ResizeSpinLoader = props => (
 );
 
 ResizeSpinLoader.propTypes = {
+  background: PropTypes.string,
   color: PropTypes.string,
   duration: PropTypes.number,
   size: PropTypes.number,
 };
 
 ResizeSpinLoader.defaultProps = {
+  background: '#fff',
   color: '#000',
   duration: 2,
   size: 11,

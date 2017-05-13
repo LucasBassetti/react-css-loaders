@@ -23,7 +23,7 @@ const ResizeSpin = styled.div`
 
   &:before {
     animation: ${props => `${loading} ${props.duration}s infinite ease 1.5s`};
-    background: #ffffff;
+    background: ${props => props.background};
     border-radius: 50%;
     border-radius: 10.2em 0 0 10.2em;
     content: '';
@@ -37,7 +37,7 @@ const ResizeSpin = styled.div`
 
   &:after {
     animation: ${props => `${loading} ${props.duration}s infinite ease`};
-    background: #ffffff;
+    background: ${props => props.background};
     border-radius: 50%;
     border-radius: 0 10.2em 10.2em 0;
     content: '';

@@ -2,6 +2,10 @@
 
 A collection of pure CSS React loading components. Based on Luke Haas [css-loaders](https://github.com/lukehaas/css-loaders) project.
 
+<a href="https://lucasbassetti.com.br/react-css-loaders/">
+<img src="https://cloud.githubusercontent.com/assets/1014326/26028622/d4de8bbe-37fa-11e7-95c4-a58c2779f4a3.gif" width="600" />
+</a>
+
 ## Contents
 - [Getting Started](#getting-started)
 - [Usage](#usage)

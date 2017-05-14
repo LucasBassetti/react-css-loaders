@@ -1,5 +1,8 @@
 # React CSS Loaders
 
+<a href="https://travis-ci.org/LucasBassetti/react-css-loaders"><img src="https://travis-ci.org/LucasBassetti/react-css-loaders.svg?branch=master" alt="Travis CI" /></a> <a href="https://badge.fury.io/js/react-css-loaders"><img src="https://badge.fury.io/js/react-css-loaders.svg" alt="npm version"> [![Coverage Status](https://coveralls.io/repos/github/LucasBassetti/react-css-loaders/badge.svg)](https://coveralls.io/github/LucasBassetti/react-css-loaders)
+
+
 A collection of pure CSS React loading components. Based on Luke Haas [css-loaders](https://github.com/lukehaas/css-loaders) project.
 
 <a href="https://lucasbassetti.com.br/react-css-loaders/">

@@ -8,6 +8,7 @@
   },
   "rules": {
     "no-console": ["off"],
+    "no-unused-expressions": ["off"],
     "no-use-before-define": ["off"],
     "no-restricted-syntax": ["off"],
     "no-param-reassign": ["off"],

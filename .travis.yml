@@ -1,9 +1,6 @@
 language: node_js
+
 node_js:
   - 7
-cache:
-  directories:
-    "node_modules"
-
-after_success:
-  - npm run coveralls
+  - 6
+  - 5

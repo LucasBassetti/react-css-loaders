@@ -7,8 +7,8 @@
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepush": "npm run lint",
     "start": "webpack-dev-server --inline --content-base build/",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require tests/helpers/setup.js --require babel-register",
-    "test:watch": "npm test --watch",
+    "test": "./node_modules/.bin/mocha tests/helpers/setup.js tests/**/*.spec.js --require babel-register",
+    "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
     "build": "webpack --config webpack.config.prod.js",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"

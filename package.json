@@ -6,19 +6,14 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepush": "npm run lint",
-    "prepublish": "npm run build",
     "start": "webpack-dev-server --inline --content-base build/",
-    "test": "./node_modules/.bin/mocha tests/helpers/setup.js tests/**/*.spec.js --require babel-register",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require tests/helpers/setup.js --require babel-register",
     "test:watch": "npm test --watch",
     "test:coverage": "nyc npm test",
     "build": "webpack --config webpack.config.prod.js",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
-    "files": [
-      "dist",
-      "lib"
-    ],
     "reporter": [
       "text",
       "html"
@@ -51,6 +46,7 @@
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "6.24.0",
     "babel-preset-react": "^6.11.1",
+    "babel-register": "^6.24.1",
     "chai": "^3.5.0",
     "clean-webpack-plugin": "^0.1.8",
     "copy-webpack-plugin": "^2.1.1",

@@ -21,7 +21,7 @@ A collection of pure CSS React loading components. Based on Luke Haas [css-loade
   - [ResizeSpinLoader](#resizespinloader)
   - [RotateSpinLoader](#rotatespinloader)
   - [SpinLoader](#spinloader)
-- [How to Contribute](#howtocontribute)
+- [How to Contribute](#how-to-contribute)
 
 ## Getting Start
 

@@ -1,8 +1,8 @@
 {
   "name": "react-css-loaders",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React CSS Loaders",
-  "main": "dist/react-css-loaders.js",
+  "main": "dist/react-css-loaders.min.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepush": "npm run lint",
@@ -10,9 +10,15 @@
     "test": "./node_modules/.bin/mocha tests/helpers/setup.js tests/**/*.spec.js --require babel-register",
     "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
-    "build": "webpack --config webpack.config.prod.js",
+    "build": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.js",
+    "build:prod": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.min.js -p",
+    "build:all": "npm run build && npm run build:prod",
+    "prepublish": "npm run build:all",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
+  "files": [
+    "dist"
+  ],
   "nyc": {
     "reporter": [
       "text",

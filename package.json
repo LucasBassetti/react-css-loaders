@@ -1,6 +1,6 @@
 {
   "name": "react-css-loaders",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React CSS Loaders",
   "main": "dist/react-css-loaders.min.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "test:coverage": "nyc npm test",
     "build": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.js",
     "build:prod": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.min.js -p",
-    "build:all": "npm run build && npm run build:prod",
+    "build:all": "rm -rf ./dist && npm run build && npm run build:prod",
     "prepublish": "npm run build:all",
     "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
@@ -70,14 +70,13 @@
     "nyc": "^10.2.0",
     "react-addons-test-utils": "^15.5.0",
     "sinon": "^2.1.0",
-    "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1",
-    "write-file-webpack-plugin": "^4.0.0"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "styled-components": "^1.4.6"
+    "styled-components": "^2.1.0"
   }
 }

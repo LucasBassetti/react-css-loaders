@@ -154,6 +154,14 @@ npm install react-css-loaders --save
 | `duration` | `PropTypes.number`  | `1.4` |
 | `size` | `PropTypes.number`  | `10` |
 
+## Authors
+
+| ![Lucas Bassetti](https://avatars3.githubusercontent.com/u/1014326?v=3&s=150)|
+|:---------------------:|
+|  [Lucas Bassetti](https://github.com/LucasBassetti/)   |
+
+See also the list of [contributors](https://github.com/LucasBassetti/react-css-loaders/contributors) who participated in this project.
+
 ## How to Contribute
 
 Please check the [contributing guide](https://github.com/LucasBassetti/react-css-loaders/blob/master/contributing.md)

@@ -16,7 +16,7 @@ const Bubble = styled.div`
   animation-delay: ${props => `${props.duration * -0.16}s`};
   animation-fill-mode: both;
   border-radius: 50%;
-  color: ${props => props.color}
+  color: ${props => props.color};
   font-size: ${props => `${props.size}px`};
   height: 2.5em;
   margin: 80px auto;

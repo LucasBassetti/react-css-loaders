@@ -1,8 +1,9 @@
 {
   "name": "react-css-loaders",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React CSS Loaders",
   "main": "dist/react-css-loaders.min.js",
+  "types": "dist/react-css-loaders.d.ts",
   "scripts": {
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepush": "npm run lint",
@@ -10,7 +11,7 @@
     "test": "./node_modules/.bin/mocha tests/helpers/setup.js tests/**/*.spec.js --require babel-register",
     "test:watch": "npm test -- --watch",
     "test:coverage": "nyc npm test",
-    "build": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.js",
+    "build": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.js && cp react-css-loaders.d.ts dist/react-css-loaders.d.ts",
     "build:prod": "webpack --config webpack.config.prod.js --output-filename react-css-loaders.min.js -p",
     "build:all": "rm -rf ./dist && npm run build && npm run build:prod",
     "prepublish": "npm run build:all",
@@ -79,6 +80,6 @@
     "react-dom": "^15.5.4"
   },
   "peerDependencies": {
-    "styled-components": "^2.x"
+    "styled-components": "^4.x"
   }
 }

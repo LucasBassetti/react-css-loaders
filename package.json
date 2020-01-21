@@ -58,7 +58,8 @@
     "clean-webpack-plugin": "^0.1.8",
     "copy-webpack-plugin": "^2.1.1",
     "coveralls": "^2.13.1",
-    "enzyme": "^2.8.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
@@ -69,17 +70,16 @@
     "jsdom": "^9.12.0",
     "mocha": "^3.2.0",
     "nyc": "^10.2.0",
-    "react-addons-test-utils": "^15.5.0",
     "sinon": "^2.1.0",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "peerDependencies": {
-    "styled-components": "^4.x"
+    "styled-components": "^3.x"
   }
 }
